@@ -4,8 +4,8 @@ class Person(name: String) : Organism(name){
     //Secondary constructor
     constructor(name: String, lastname: String) : this(name)
 
-    fun greeting() {
-        print("Hello world, my name is $name \n")
+    fun greeting(to: String) : String {
+        return "Hello $to, my name is $name \n"
     }
 }
 
