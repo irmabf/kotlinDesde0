@@ -1,5 +1,8 @@
 fun main(args: Array<String>) {
-    val jon: Person = Person("Jon", "Snow")
-    print(jon.greeting("Daenerys"))
-    jon.eat()
+  //lambda
+  val greeting: (String) -> Unit = {name ->
+    print("Hello World, $name")
+  }
+  //invoke lambda
+  greeting.invoke("Lord Snow")
 }
