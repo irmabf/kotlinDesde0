@@ -15,7 +15,13 @@ fun main(args: Array<String>) {
 
   val nightKingArmy: List<IceDragon> = listOf<IceDragon>(viserion)
 
+  val xin = RedMountainDragon()
+
+  xin.attack()
+
   drogon.armyAttack(daenerysArmy)
   rhaegal.armyAttack(nightKingArmy)
+
+
 
 }
