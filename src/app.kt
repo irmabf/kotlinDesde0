@@ -5,4 +5,18 @@ fun main(args: Array<String>) {
   }
   //invoke lambda
   greeting.invoke("Lord Snow")
+
+
+  val drogon: FireDragon = FireDragon()
+  val rhaegal: FireDragon = FireDragon()
+  val viserion: IceDragon = IceDragon()
+
+  val daenerysArmy: List<FireDragon> = listOf<FireDragon>(drogon, rhaegal)
+
+  val nightKingArmy: List<IceDragon> = listOf<IceDragon>(viserion)
+
+  drogon.attack()
+  rhaegal.attack()
+
+  viserion.attack()
 }
